@@ -1,6 +1,8 @@
 #![no_std] // Don't link the Rust standard library 
 #![no_main] // Disable all Rust-level entry points
 
+mod vga_buffer;
+
 use core::panic::PanicInfo;
 
 static HELLO: &[u8] = b"Hello World!";
